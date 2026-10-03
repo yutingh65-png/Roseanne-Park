@@ -1,0 +1,156 @@
+/*Globel通用設定*/
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+
+body{
+	font-family: Arial;
+	line-height: 1.6;
+	background-color: black;
+}
+
+ul{
+	list-style: none;
+}
+
+/*主內容最外層*/
+.wrapper{
+	width: 1400px;
+	height: 787px;
+	background-color: pink;
+	/*元素定位-相對定位*/
+	position: relative;
+	/*置中*/
+	margin: 50px auto;
+	/*背景圖*/
+	background-image: url('../image/ie.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	border-radius: 30px;
+	box-shadow:  3px 3px 40px #e65100;
+}
+
+/*A主選單*/
+.nav{
+	/*浮動靠右*/
+	float: right;
+	padding: 30px 40px 0px 0px;
+
+}
+
+.nav li{
+	float: left;
+	margin-left: 50px;
+}
+
+.nav a{
+	text-decoration: none;
+	color: 		#FF8F59;
+	font-size: 16px;
+	font-family: Arial Black;
+	font-weight: 600;
+	text-decoration: underline transparent;
+	text-underline-offset: 5px;
+	text-decoration-thickness: 3px;
+	transition:text-decoration-color 0.3s ;
+}
+
+.nav a:hover{
+	color: 	#FFC1E0	;
+	text-decoration-color:	#FFC1E0 ;
+}
+/*B主選單*/
+.container{
+	width: 500px;
+	float: right;
+	clear: both;
+	padding:20px 50px 0px 0px;
+	margin-top: -10px;
+}
+
+.container h1{
+	font-size: 72px;
+	color:#F75000	;
+	font-family: "Comic Sans MS", sans-serif;
+	font-weight: 900;
+	animation-name: color;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*關鍵影格@keyframes*/
+@keyframes color{
+	0%{color:#FFBB77;
+		transform: translateY(0px) ;
+	}
+	50%{color:#D26900;
+		transform: translateY(-15px) rotate(-1.5deg);
+	}
+	100%{color:#FFC78E;
+		transform: translateY(0px);
+	}
+}
+
+.container h2{
+	font-size: 42px;
+	color:	#FF8000	;
+	font-family: "Comic Sans MS", sans-serif;
+	
+}
+
+.container p{
+	color: #FFAD86;
+	font-family: Arial ;
+	font-weight: 300;
+}
+
+.container a{
+	display: inline-block;
+	text-decoration: none;
+	background: transparent;
+	color: 	#D26900;
+	border: 2px solid #D26900;
+	padding:12px 40px ;
+	text-align: center;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+
+.container a:hover{
+	background-color:#FFD1A4	;
+	color:black;
+	border-radius: 50px;
+	transform: translateY(-5px);
+}
+
+/*C社群連結*/
+
+.social-media{
+	/*浮動*/
+	float: right;
+	/*絕對定位*/
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
+.social-media li{
+	/*浮動*/
+	float: left;
+	margin-left: 30px;
+}
+
+.social-media a{
+	display: inline-block;
+	color:#F75000 ;
+ 	transition: 0.3s;
+}
+
+.social-media a:hover{
+	color:		#FFEEDD;
+	transform: scale(1.5);
+
+}
